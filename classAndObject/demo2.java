@@ -27,7 +27,7 @@ public class demo2 {
         System.out.println(new Integer(1).hashCode());
         System.out.println(new Integer(1).hashCode());
 //包装类和 string的hashCode 都是根据值生成 但默认hashCode从存储地址获得
-//        要确保hashCode相等 equals就一定为true 反过来一样
+//        要确保hashCode相等 equals就一定为true 反过来不一样
         System.out.println(Objects.hashCode(123));//Objects工具类的hashCode 传入对象会当为null时返回0
 //        而自身的hashCode 为null报空指针异常
         ArrayList arrayList=new ArrayList<Integer>();//有泛型的可以赋值给无泛型的 但无泛型的赋值给有泛型的会抛出异常
