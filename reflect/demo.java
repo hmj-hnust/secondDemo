@@ -18,7 +18,7 @@ public class demo {
        Constructor<Person> constructor= cl.getConstructor();//获得构造函数的反射 通过传入构造参数获得不同
 //        构造函数
        Person person1=constructor.newInstance();//调用构造函数进行实例化 如果构造函数是有参数的那么可以在这里传入
-//        参数
+//        参数。
        person1.p(11);
         URL url=cl.getResource("1.txt");//通过class的getResource获得URL 相对路径 位置是这个类所在位置
         InputStream inputStream=cl.getResourceAsStream("1.txt");//获得流 没找到返回null 上面一样
