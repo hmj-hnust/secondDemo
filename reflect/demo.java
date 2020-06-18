@@ -42,7 +42,7 @@ public class demo {
         Method[] methods=cl.getMethods();//返回超类和自身公共方法
         methods=cl.getDeclaredMethods();//返回全部方法不包括由超类继承的 继承的就是超类部分的
         for(Method m:methods){
-            System.out.println(m.getExceptionTypes());//返回方法或者构造器抛出的异常Class只有 方法构造器有
+            System.out.println(m.getExceptionTypes());//返回方法或者构造器抛出的异常Class只有 方法 构造器有
 //            字段没有
             System.out.println(m.getParameterTypes());//返回方法或者构造器的参数Class 字段没有 字段getType
             System.out.println(m.getReturnType());//返回类型Class 只有方法有
